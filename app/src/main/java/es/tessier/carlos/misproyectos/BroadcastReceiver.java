@@ -5,28 +5,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-
-public class Actividad_Intent_1 extends Activity {
+public class BroadcastReceiver extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_actividad__intent_1);
+        setContentView(R.layout.activity_broadcast_receiver);
     }
 
-    public void onClick(View boton){
-        Intent intent = new Intent(this,Actividad_Intent_1_2.class);
-        startActivity(intent);
-
+    public void sendBroadcastIntent(){
+        Intent intent = new Intent();
+        intent.putExtra("mensaje", "Hello World");
+        intent.setAction("es.ruiz.miguel.misproyectos.CUSTOM_INTENT");
+        sendBroadcast(intent);
     }
+
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_actividad__intent_1, menu);
+        getMenuInflater().inflate(R.menu.menu_broadcast_receiver, menu);
         return true;
     }
 

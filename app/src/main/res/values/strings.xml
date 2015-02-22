@@ -9,10 +9,38 @@
     <string name="no_connection_message">Network is unaviable!</string>
     <string name="search">search</string>
     <string name="hint_search">write a term to search</string>
-    <string name="title_activity_actividad__intent_1">Actividad_Intent_1</string>
-    <string name="title_activity_actividad__intent_1_2">Actividad_Intent_1_2</string>
     <string name="title_activity_ciclo_de_vida">CicloDeVida</string>
-    <string name="title_activity_actividad__intent_2">Actividad_Intent_2</string>
-    <string name="title_activity_actividad__intent_2_2">Actividad_Intent_2_2</string>
+    <string name="title_activity_pulsame">Pulsame</string>
+    <string name="pulsame">¡Pulsame!</string>
+    <string name="title_activity_intents__act_01">Intents_Act_01</string>
+    <string name="title_activity_intents__act_01_b">Intents_Act_01_b</string>
+    <string name="muestraSegundaAct">Muestra la segunda actividad</string>
+    <string name="TextSegundaAct">¡Esta es la segunda actividad!</string>
+    <string name="title_activity_intents__act_02_b">Intents_Act_02_b</string>
+    <string name="title_activity_intents__act_02">Intents_Act_02</string>
+    <string name="TextIntroNombre">Por favor, introduce tu nombre</string>
+    <string name="Aceptar">Aceptar</string>
+    <string name="hintEditText">Introduce tu nombre</string>
+    <string name="title_activity_intents__act_03">Intents_Act_03</string>
+    <string name="title_activity_intents__act_03_b">Intents_Act_03_b</string>
+    <string name="VolverActividad">Pulsa para volver a la actividad principal</string>
+    <string name="title_activity_implicit_intents">ImplicitIntents</string>
+    <string name="www.uem.es">www.uem.es</string>
+    <string name="TelefonoUem">Telefono uem</string>
+    <string name="LocUem">Localizacion uem</string>
+    <string name="title_activity_broadcast_receiver">BroadcastReceiver</string>
+    <string name="BroadcastIntent">Broadcast Intent</string>
+    <string name="title_publicacionblog_list">PublicacionesBlog</string>
+    <string name="title_publicacionblog_detail">PublicacionBlog Detail</string>
+    <string name="textFragment1">Este es el fragmento 1</string>
+    <string name="textFragment2">Este es el fragmento 2</string>
+    <string name="title_activity_fragmentos">Fragmentos</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_progress">Progress</string>
+    <string name="title_activity_notificacion">Notificacion</string>
+    <string name="title_activity_notificaciones">Notificaciones</string>
+    <string name="notificacion1">Aquí escribimos los detalles de la notificación</string>
 
 </resources>

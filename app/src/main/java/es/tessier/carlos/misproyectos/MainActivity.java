@@ -13,10 +13,15 @@ import android.widget.ListView;
 
 public class MainActivity extends ListActivity {
 
-    private String practicas[] = {"GoogleJSON",
-            "Actividad_Intent_1",
-            "Actividad_Intent_2",
-            "CicloDeVida"};
+    private String practicas[] = {"GoogleJSON", "Intents_Act_01",
+            "Intents_Act_02",
+            "Intents_Act_03",
+            "ImplicitIntents",
+            "BroadcastReceiver",
+            "PublicacionBlogListActivity",
+            "Fragmentos",
+            "Progress","Actividad_Notificaciones​",
+            "CicloDeVida", "Pulsame"};
 
     final static String TAG = MainActivity.class.getName();
 
@@ -35,19 +40,18 @@ public class MainActivity extends ListActivity {
 
     @Override
     protected void onListItemClick(ListView lista, View vista,
-                                   int posicion, long id){
+                                   int posicion, long id) {
         super.onListItemClick(lista, vista, posicion, id);
         // guardamos el nombre de la actividad seleccionada
         String nombrePractica = practicas[posicion];
-        try{
+        try {
             Class<?> clase = Class.forName(
-                    "es.tessier.carlos.misproyectos."+
-                    nombrePractica);
-            Intent intent = new Intent(this,clase);
+                    "es.tessier.carlos.misproyectos." +
+                            nombrePractica);
+            Intent intent = new Intent(this, clase);
             startActivity(intent);
-        }
-        catch(ClassNotFoundException e){
-            Log.e(TAG,"Actividad no creada: ",e);
+        } catch (ClassNotFoundException e) {
+            Log.e(TAG, "Actividad no creada: ", e);
         }
 
     }

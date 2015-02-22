@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
 
     <application
         android:allowBackup="true"
@@ -21,29 +23,75 @@
         </activity>
         <activity
             android:name=".GoogleJSON"
-            android:label="@string/title_activity_google_json" >
-        </activity>
-        <activity
-            android:name=".Actividad_Intent_1"
-            android:label="@string/title_activity_actividad__intent_1"
-            android:theme="@android:style/Theme.Dialog" >
-        </activity>
-        <activity
-            android:name=".Actividad_Intent_1_2"
-            android:label="@string/title_activity_actividad__intent_1_2"
-            android:parentActivityName=".Actividad_Intent_1" >
-        </activity>
+            android:label="@string/title_activity_google_json" />
         <activity
             android:name=".CicloDeVida"
-            android:label="@string/title_activity_ciclo_de_vida" >
+            android:label="@string/title_activity_ciclo_de_vida" />
+        <activity
+            android:name=".Pulsame"
+            android:label="@string/title_activity_pulsame" />
+        <activity
+            android:name=".Intents_Act_01"
+            android:label="@string/title_activity_intents__act_01" />
+        <activity
+            android:name=".Intents_Act_01_b"
+            android:label="@string/title_activity_intents__act_01_b" />
+        <activity
+            android:name=".Intents_Act_02_b"
+            android:label="@string/title_activity_intents__act_02_b" />
+        <activity
+            android:name=".Intents_Act_02"
+            android:label="@string/title_activity_intents__act_02" />
+        <activity
+            android:name=".Intents_Act_03"
+            android:label="@string/title_activity_intents__act_03" />
+        <activity
+            android:name=".Intents_Act_03_b"
+            android:label="@string/title_activity_intents__act_03_b" />
+        <activity
+            android:name=".ImplicitIntents"
+            android:label="@string/title_activity_implicit_intents" />
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="es.ruiz.miguel.misproyectos.CUSTOM_INTENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".BroadcastReceiver"
+            android:label="@string/title_activity_broadcast_receiver" >
         </activity>
         <activity
-            android:name=".Actividad_Intent_2"
-            android:label="@string/title_activity_actividad__intent_2" >
+            android:name=".PublicacionBlogListActivity"
+            android:label="@string/title_publicacionblog_list" >
         </activity>
         <activity
-            android:name=".Actividad_Intent_2_2"
-            android:label="@string/title_activity_actividad__intent_2_2" >
+            android:name=".PublicacionBlogDetailActivity"
+            android:label="@string/title_publicacionblog_detail"
+            android:parentActivityName=".PublicacionBlogListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.tessier.carlos.misproyectos.PublicacionBlogListActivity" />
+        </activity>
+        <activity
+            android:name=".Fragmentos"
+            android:label="@string/title_activity_fragmentos" >
+        </activity>
+        <activity
+            android:name=".Progress"
+            android:label="@string/title_activity_progress" >
+        </activity>
+        <activity
+            android:name=".Notificacion"
+            android:label="@string/title_activity_notificacion" >
+        </activity>
+        <activity
+            android:name=".Notificaciones"
+            android:label="@string/title_activity_notificaciones" >
         </activity>
     </application>
 
